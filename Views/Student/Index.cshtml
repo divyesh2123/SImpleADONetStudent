@@ -1,0 +1,17 @@
+﻿@model List<Student>
+<table>
+@foreach(var t in Model)
+{
+    <tr>
+        <td>@t.Email</td>
+             <td>@t.FirstName</td>
+                 <td>@t.LastName</td>
+                  <td>
+                      
+                      <a asp-action="DeleteInfo" asp-controller="Student" asp-route-deleteId="@t.Id" >Delete</a>
+                    
+                   <a asp-action="Edit" asp-controller="Student" asp-route-editId="@t.Id" >Edit</a>
+                  </td>
+    </tr>
+}
+</table>

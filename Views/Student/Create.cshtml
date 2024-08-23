@@ -1,0 +1,13 @@
+﻿@model Student
+
+<form asp-action="Create" asp-controller="Student" method="post">
+
+    <input type="hidden" asp-for="Id"/>
+    <input type="text" asp-for="FirstName"/>
+     <input type="text" asp-for="LastName"/>
+      <input type="text" asp-for="Mobile"/>
+        <input type="text" asp-for="Email"/>
+         <input type="text" asp-for="Address"/>
+
+    <input type="submit" value="save"/>
+</form>
